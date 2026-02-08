@@ -1,48 +1,137 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HubsAgency — Meta Support Made Simple</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-<nav class="navbar">
-<div class="logo">Hubs<span>Agency</span></div>
-<ul>
-<li><a href="#hero">Home</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-<button id="modeToggle">☾</button>
-</nav>
 
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Hubs<span>Agency</span></div>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section id="hero" class="hero">
-<div class="hero-content">
-<h1>We Build Digital Experiences</h1>
-<p>Your growth, our mission. Premium solutions for your brand.</p>
-<a href="#services" class="btn">Explore Services</a>
-</div>
-</section>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">Meta Concierge Support</p>
+      <h1>Meta Support <span>Made Simple</span></h1>
+      <p class="hero-desc">
+        We help creators and businesses recover Instagram accounts,
+        resolve copyright disputes, and handle Meta-related issues
+        through official concierge channels.
+      </p>
 
+      <div class="hero-buttons">
+        <a href="#contact" class="btn primary">Get Support</a>
+        <a href="#services" class="btn ghost">Our Services</a>
+      </div>
+    </div>
 
-<section id="services" class="section">
-<h2>Our Services</h2>
-<div class="services-container">
-<div class="service">Web Development</div>
-<div class="service">Brand Strategy</div>
-<div class="service">Marketing Campaigns</div>
-</div>
-</section>
+    <div class="hero-glow"></div>
+  </section>
 
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p class="section-text">
+      HubsAgency is a professional Meta support agency helping individuals,
+      creators, and brands resolve Instagram bans, disabled accounts,
+      copyright strikes, and verification issues.
+      <br><br>
+      We work through **official escalation channels** and focus on
+      transparency, security, and fast resolution.
+    </p>
+  </section>
 
-<section id="about" class="section">
-<h2>About Us</h2>
-<p>We are a digital agency crafting high-end online experiences using modern design & animations.</p>
-</section>
+  <!-- SERVICES -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
 
+    <div class="grid">
+      <div class="card">
+        <h3>Instagram Account Recovery</h3>
+        <p>
+          Recovery of banned, disabled, or hacked Instagram accounts
+          using official Meta escalation processes.
+        </p>
+      </div>
 
-<section id="contact" class="section">
-<h2>Contact</h2>
-<p>Email: support@hubsagency.com</p>
-</section>
+      <div class="card">
+        <h3>Copyright Dispute Resolution</h3>
+        <p>
+          Removal of false copyright strikes and assistance with
+          content protection claims.
+        </p>
+      </div>
 
+      <div class="card">
+        <h3>Meta Concierge Support</h3>
+        <p>
+          Direct professional guidance for faster Meta issue resolution
+          and verification assistance.
+        </p>
+      </div>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section">
+    <h2>What Clients Say</h2>
+
+    <div class="grid">
+      <div class="card testimonial">
+        <p>
+          “Got my Instagram back within 48 hours. Professional and
+          trustworthy service.”
+        </p>
+        <span>— Aarav S.</span>
+      </div>
+
+      <div class="card testimonial">
+        <p>
+          “They handled my copyright dispute quickly.
+          Highly recommended.”
+        </p>
+        <span>— Riya M.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+
+    <form class="contact-form" netlify>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+      <p class="email-alt">
+        Or email us directly at
+        <a href="mailto:zeeshan@hubsagency.in">zeeshan@hubsagency.in</a>
+      </p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 HubsAgency · All Rights Reserved
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
